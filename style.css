@@ -1,0 +1,365 @@
+@font-face {
+    font-family: DancingScript;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Attila;
+    src: url(fonts/F37Attila-Medium.otf);
+}
+
+@font-face {
+    font-family: Havelock;
+    src: url(fonts/XO\,\ Pretty\ -\ Havelock\ Titling\ Medium.otf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/FontsFree-Net-Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy-Light.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Attila;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #222;
+    overflow-x: hidden;
+    color: #d1d1d1;
+}
+
+#main {
+    /* height:100%; */
+    position: relative;
+    background-color: #222;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#full-scr-nav {
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    position: absolute;
+    transition: all ease 1s;
+    top: -100vh;
+    padding: 110px;
+    color: #222;
+    z-index: 99;
+}
+
+#full-scr-nav h1 {
+    font-size: 240px;
+    color: #222;
+
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: absolute;
+    z-index: 99;
+
+}
+
+#nav h2 {
+    /* text-transform: uppercase; */
+    font-size: 26px;
+    letter-spacing: 1px;
+    transition: all ease 0.9s;
+}
+
+#nav h3 {
+    /* text-transform: uppercase; */
+    font-size: 26px;
+    letter-spacing: 1px;
+    transition: all ease 0.9s;
+}
+
+#nav-prt2 {
+    display: flex;
+    align-items: center;
+    transition: all ease 0.9s;
+
+}
+
+#nav-prt2 i {
+    font-size: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: all ease 0.9s;
+}
+
+#page1 {
+    min-height: 85vh;
+    width: 100vw;
+    position: relative;
+}
+
+#page1 h1 {
+    text-transform: uppercase;
+    font-size: 13vw;
+    position: absolute;
+    left: 15%;
+    top: 23%;
+}
+
+#page1 h2 {
+    font-size: 3vw;
+    position: absolute;
+    left: 25%;
+    top: 54%;
+    width: 28%;
+    line-height: 2.6vw;
+    color: #d1d1d1;
+}
+
+#page1 h3 {
+    font-size: 1vw;
+    position: absolute;
+    right: 10%;
+    top: 55%;
+    width: 28%;
+    color: #d1d1d1;
+}
+
+#page2 {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 30vh;
+}
+
+#page2 img {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(0.9);
+    margin-bottom: 20vh;
+}
+
+#page2 h1 {
+    font-size: 35px;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: 100% 100%;
+    transform: rotateX(270deg);
+    opacity: 0;
+}
+
+#page2 h1 span {
+    font-family: DancingScript;
+    font-size: 35px;
+    width: 40%;
+    text-align: center;
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+
+}
+
+#page4 {
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    padding: 50px 140px;
+}
+
+#page4 h1 {
+    font-size: 9vw;
+}
+
+#page5 {
+    height: 130vh;
+    width: 100vw;
+    position: relative;
+}
+
+#page5-elems {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ;
+}
+
+#page5-elems h1 {
+    width: 60%;
+    height: 100%;
+    font-size: 45px;
+    padding: 20px 80px;
+    border: 1px solid #d1d1d1;
+
+}
+
+#page5-elems h2 {
+    width: 40%;
+    height: 100%;
+    font-size: 25px;
+    padding: 30px 80px;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+#page5-content {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 200px 0px;
+    background-image: url(https://uploads-ssl.webflow.com/61defec4a021d8fe954c11bd/61defec4a021d83ede4c11f8_stars.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+#page5-content h1 {
+    font-size: 3.5vw;
+    text-align: center;
+    width: 45%;
+    line-height: 3vw;
+
+}
+#page5-content h1 span{
+    font-family: DancingScript;
+    font-size: 4.8vw;
+    font-weight: 100000;
+}
+#page5-content h4{
+    font-size: 1.4vw;
+    width:30%;
+    margin: 50px;
+}
+#page6 .slide1-of-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+#page6 .slide1-of-h1::-webkit-scrollbar{
+    display: none;
+}
+
+#page6 .slide2-of-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default; 
+}
+#page6 .slide2-of-h1::-webkit-scrollbar{
+    display: none;
+}
+#page6 .slide2-of-h1 h1{
+     transform:translateX(-100%); 
+}
+
+#page6 h1{
+    font-size: 10vw;
+    text-transform: uppercase;
+    line-height: 15vh;
+}
+#page6 h1 .one2{
+    color:transparent;
+    -webkit-text-stroke: 0.1px #adadad;
+}
+#page7{
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
+    padding:180px 50px;
+    text-align:center;
+}
+#page7 h3{
+    font-size: 3vw;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+#page7 h3 span{
+    font-size: 3.8vw;
+    font-family: DancingScript;
+}
+
+#page7-elems{
+    height: 30vh;
+    margin-top: 5vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+#page7-elems #element1{
+    height: 70%;
+    width: 25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+    
+}
+#page7-elems #element1 h1{
+    font-size: 60px;
+    z-index: 99;
+    position: relative;
+}
+
+#page7-elems #element2{
+    height: 70%;
+    width: 25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+    
+}
+#page7-elems #element2 h1{
+    font-size: 60px;
+    z-index: 99;
+    position: relative;
+}
+
+#page7-elems #element1 img{
+    height: 75%;
+    width: 10%;
+    position: absolute;
+    opacity: 0;
+    border-radius: 3%;
+    transition: opacity ease-in 0.2s;
+    transform: rotate(10deg);
+
+}
+
+#page7-elems #element2 img{
+    height: 75%;
+    width: 10%;
+    position: absolute;
+    opacity: 0;
+    border-radius: 3%;
+    transition: opacity ease-in 0.2s;
+    transform: rotate(10deg);
+}
